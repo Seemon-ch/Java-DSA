@@ -28,7 +28,7 @@ public class Pattern2 {
 //     *
 
     public void pattern2B(int n){
-        int value=5;
+        int value=n;
         for(int i=0 ; i<n ;i++){
             for(int k=0 ; k<=i;k++){
                 System.out.print(" ");
