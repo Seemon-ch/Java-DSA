@@ -14,13 +14,13 @@ public class binomialCoff {
 
         int n_ =factorial(n) ;
         int r_ =factorial(r);
-        int n_minus_r = factorial(n-r);
+        int n_minus_r = factorial(n_-r_);
 
         int ans = n/(r * n_minus_r);
         return ans;
      }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try(Scanner sc = new Scanner(System.in)){
         int n = sc.nextInt();
         int r = sc.nextInt();
 
@@ -28,7 +28,7 @@ public class binomialCoff {
         int result= bcoff.bincoff(n,r);
         System.out.println("binomial cofficient is " + result);
 
-        sc.close();
+        }
     }
 }
 
