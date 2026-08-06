@@ -1,6 +1,7 @@
 package sorting;
 
 public class BubbleSort {
+    //bubble sort = {T.C=O(n2)in all cases}
     public void bubbleSort(int arr[]){
         for(int i=0;i<arr.length ;i++){
             for(int j=0;j<arr.length-1-i;j++){
@@ -12,7 +13,23 @@ public class BubbleSort {
             }
         }
     }
-
+    //optimized bubbble sort = { TC=O(n) in best case}
+    public void bubbleSort2(int arr[]){
+        for(int i=0;i<arr.length ;i++){
+            boolean swapped = false;
+            for(int j=0;j<arr.length-1-i;j++){
+                if(arr[j] >arr[j+1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                    swapped = true ;
+                }
+            }
+            if(swapped ==true){
+                break;
+            }
+        }
+    }
     public void display(int arr[]){
         System.out.println("Sorted array is:-");
         for(int el :arr){
