@@ -1,4 +1,5 @@
 //efficeint way to find max subarray sum.
+package arrays;
 
 import java.util.Scanner;
 public class Kadans{
