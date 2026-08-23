@@ -14,7 +14,7 @@ public class Pattern3 {
 //    ***
 //     * 
 
-public void pattern3(int n){
+    public void pattern3a(int n){
         
         for(int i=0; i<=n ;i++){
             for(int k=0 ; k<=n-i-1;k++){
@@ -46,7 +46,7 @@ public void pattern3(int n){
             int n = sc.nextInt();
             Pattern3 obj = new Pattern3();
             // obj.pattern2A(n);
-            obj.pattern3(n);
+            obj.pattern3a(n);
 
         }
 

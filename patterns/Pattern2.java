@@ -8,7 +8,7 @@ public class Pattern2 {
 //   *****
 //  *******
 // *********
-    public void pattern2A(int n){
+    public void pattern2a(int n){
         for(int i=0 ; i<n ;i++){
             for(int k=0 ; k<=n-i-1 ;k++){
                 System.out.print(" ");
@@ -27,7 +27,7 @@ public class Pattern2 {
 //    ***
 //     *
 
-    public void pattern2B(int n){
+    public void pattern2b(int n){
         int value=n;
         for(int i=0 ; i<n ;i++){
             for(int k=0 ; k<=i;k++){
@@ -48,8 +48,8 @@ public class Pattern2 {
         try(Scanner sc = new Scanner(System.in)){
             int n = sc.nextInt();
             Pattern2 obj = new Pattern2();
-            // obj.pattern2A(n);
-            obj.pattern2B(n);
+            // obj.pattern2a(n);
+            obj.pattern2b(n);
 
         }
 
