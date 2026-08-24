@@ -1,6 +1,7 @@
 package arrayTwoD;
 
 public class DiagonalSum{
+    //Brute force approach
     public int diagonalSum(int matrix[][]){
         int sum=0;
         int n=matrix.length;
@@ -17,6 +18,19 @@ public class DiagonalSum{
         }
         return sum;
     }
+
+    //optimimze approach 
+    public int diagonalSumOptimized(int matrix[][]){
+        int sum=0;
+        for(int i=0;i<matrix.length ;i++){
+            sum+=matrix[i][j];
+            if(i !=matrix.length -1-i){
+                sum +=matrix[i][matrix.length -1-i];
+            }
+        }
+        return sum;
+
+    }
     public static void main(String[] args) {
         int matrix[][] = {
                     {1,4,7,11,15},
@@ -27,6 +41,7 @@ public class DiagonalSum{
             };
         DiagonalSum obj = new DiagonalSum();
         int res =obj.diagonalSum(matrix);
+        int result2 =obj.diagonalSumOptimized(matrix);
         System.out.println(res);
     }
 }
