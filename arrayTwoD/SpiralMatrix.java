@@ -39,7 +39,6 @@ public class SpiralMatrix {
             }
         }
     }
-
     public static void main(String[] args) {
         int matrix[][] = {
                     {1,4,7,11,15},

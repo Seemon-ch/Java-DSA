@@ -23,9 +23,9 @@ public class DiagonalSum{
     public int diagonalSumOptimized(int matrix[][]){
         int sum=0;
         for(int i=0;i<matrix.length ;i++){
-            sum+=matrix[i][j];
-            if(i !=matrix.length -1-i){
-                sum +=matrix[i][matrix.length -1-i];
+            sum+=matrix[i][i];
+            if(i !=matrix.length-1-i){
+                sum +=matrix[i][matrix.length-1-i];
             }
         }
         return sum;
@@ -40,8 +40,8 @@ public class DiagonalSum{
                     {18,21,23,26,30},
             };
         DiagonalSum obj = new DiagonalSum();
-        int res =obj.diagonalSum(matrix);
+        // int res =obj.diagonalSum(matrix);
         int result2 =obj.diagonalSumOptimized(matrix);
-        System.out.println(res);
+        System.out.println(result2);
     }
 }

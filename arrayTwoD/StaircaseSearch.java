@@ -30,11 +30,12 @@ public class StaircaseSearch {
             StaircaseSearch obj = new StaircaseSearch();
             boolean result = obj.searchMatrix(martix, target);
 
+
             if(result){
-                System.out.println("target found");
+                System.out.println("Target found");
             }
             else{
-                System.out.println("target not found");
+                System.out.println("Target not found");
             }
 
          }
