@@ -11,11 +11,21 @@ public class ModifiedBinarySearch {
             if(arr[mid] == key){
                return mid;
             }
-            else if(arr[mid] <key){
-                beg = mid +1 ;
+            if(arr[beg] <= arr[mid]){
+                if(key>=arr[beg]&& key<arr[mid-1]){
+                    end=mid-1;
+                }
+                else{
+                    beg =mid+1;
+                }
             }
             else{
-                end = mid -1;
+                if(key <=arr[end] && key>arr[mid]){
+                    beg= mid+1;
+                }
+                else{
+                    end =mid-1;
+                }
             }
         }
         return -1 ;
